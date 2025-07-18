@@ -702,6 +702,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6bb0fc6a819f9384eb0196252ad9b0fd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1198797846}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6bb0fc6a819f9384eb0196252ad9b0fd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1198797848}
     - targetCorrespondingSourceObject: {fileID: 5043810747190884609, guid: 6bb0fc6a819f9384eb0196252ad9b0fd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1560984197}
@@ -733,6 +736,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1198797848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198797844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2412656a7b5fd404399997f872156ec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScrollScale
+  scrollActionRef: {fileID: 6240969308177333660, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  scaleSpeed: 0.1
+  RangeMin: 0.3
+  RangeMax: 2
 --- !u!1 &1560984194 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5043810747190884609, guid: 6bb0fc6a819f9384eb0196252ad9b0fd, type: 3}
