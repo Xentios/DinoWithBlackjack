@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: d54564232f25f09438eb13439edd677a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 270056
+  packageName: Simple Pie Menu | Radial Menu Asset
+  packageVersion: 1.0.5
+  assetPath: Assets/Simple Pie Menu/Scripts/Menu Item/IMenuItemClickHandler.cs
+  uploadId: 747834

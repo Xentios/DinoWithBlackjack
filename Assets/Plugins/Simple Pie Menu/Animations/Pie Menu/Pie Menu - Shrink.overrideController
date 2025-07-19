@@ -1,0 +1,13 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Pie Menu - Shrink
+  m_Controller: {fileID: 9100000, guid: c29cdf51802f86342986479a4f692514, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 21bfaa2359bb8344b8a67f1734fb5981, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f859a0dea8ba77a478aa6cc8318f49ea, type: 2}

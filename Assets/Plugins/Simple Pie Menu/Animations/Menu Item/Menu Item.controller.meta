@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 21768686f1e800d42a872a90e6018143
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 270056
+  packageName: Simple Pie Menu | Radial Menu Asset
+  packageVersion: 1.0.5
+  assetPath: Assets/Simple Pie Menu/Animations/Menu Item/Menu Item.controller
+  uploadId: 747834

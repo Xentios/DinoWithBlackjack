@@ -1,0 +1,34 @@
+{
+    "name": "PieMenuDemoControls",
+    "maps": [
+        {
+            "name": "PieMenu",
+            "id": "3f36ec57-bf8c-476d-bd21-9634b566e84a",
+            "actions": [
+                {
+                    "name": "Display",
+                    "type": "Button",
+                    "id": "8e686d54-5cf7-4a34-9e8e-6765ce61aba7",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "8fbaf469-dd20-4e0e-842c-f61a6bd225ea",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Display",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

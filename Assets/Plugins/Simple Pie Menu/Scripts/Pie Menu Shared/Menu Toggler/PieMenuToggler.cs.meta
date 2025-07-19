@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 6c02eaf604c491c44af95a0a49da195f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 270056
+  packageName: Simple Pie Menu | Radial Menu Asset
+  packageVersion: 1.0.5
+  assetPath: Assets/Simple Pie Menu/Scripts/Pie Menu Shared/Menu Toggler/PieMenuToggler.cs
+  uploadId: 747834

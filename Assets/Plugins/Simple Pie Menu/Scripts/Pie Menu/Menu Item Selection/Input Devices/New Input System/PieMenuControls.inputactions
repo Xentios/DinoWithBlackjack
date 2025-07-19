@@ -1,0 +1,74 @@
+{
+    "name": "PieMenuControls",
+    "maps": [
+        {
+            "name": "MouseAndKeyboard",
+            "id": "57d71994-ef4d-44b0-b848-eb4cd65d2dd8",
+            "actions": [
+                {
+                    "name": "Selection",
+                    "type": "Button",
+                    "id": "758310ad-2d2f-441a-a069-a787082fcc8f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Close",
+                    "type": "Button",
+                    "id": "c034a993-d15b-4eba-bc13-ad64b802bef5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Pointer Position",
+                    "type": "Value",
+                    "id": "73cdcf3e-1545-47e1-b6c5-d6996058bbf8",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "5b476b9c-c389-4082-a44e-8f6ee70545f8",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Close",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "74c6b187-2f2f-4a39-8f67-54d0f4c75215",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pointer Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cdabd5a9-c7e1-4958-868b-bf7b7407f669",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Selection",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
