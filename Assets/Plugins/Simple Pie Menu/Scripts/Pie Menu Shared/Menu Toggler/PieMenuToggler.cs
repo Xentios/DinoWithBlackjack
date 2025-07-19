@@ -15,6 +15,8 @@ namespace SimplePieMenu
 
         private int openedPieMenusCount;
 
+        public event System.Action<bool> OnMenuStateChanged;
+
         private void Update()
         {
             CloseOnReturnPressed();
@@ -48,6 +50,7 @@ namespace SimplePieMenu
 
         private void ShowPieMenu(PieMenuState state)
         {
+            OnMenuStateChanged?.Invoke(true);
             state.PieMenuInfo.SetTransitionState(true);
             state.PieMenuGO.SetActive(true);
             animationsHandler.PlayAnimation(state.Animator, PieMenuAnimationsSettingsHandler.TriggerActiveTrue);
@@ -56,6 +59,7 @@ namespace SimplePieMenu
 
         private void HidePieMenu(PieMenuState state)
         {
+            OnMenuStateChanged?.Invoke(false);
             state.SelectionHandler.ToggleSelection(false);
             references.AudioSettingsHandler.PlayAudio(state.PieMenuElements.MouseClickAudioSource);
             animationsHandler.PlayAnimation(state.Animator, PieMenuAnimationsSettingsHandler.TriggerActiveFalse);
@@ -94,6 +98,7 @@ namespace SimplePieMenu
             PieMenuInfo pieMenuInfo = pieMenu.PieMenuInfo;
             float audioClipLength = pieMenuInfo.MouseClick.length;
             float animationClipLength = pieMenuInfo.Animation.length;
+            animationClipLength /= 2f;
 
             timeToWait = Mathf.Max(audioClipLength, animationClipLength);
             return timeToWait;
@@ -127,7 +132,7 @@ namespace SimplePieMenu
                 {
                     bool returnPressed = currentMenu.SelectionHandler.InputDeviceGetter.InputDevice.IsCloseButtonPressed();
 
-                    if (returnPressed )
+                    if (returnPressed)
                     {
                         SetActive(currentMenu.PieMenu, false);
                     }

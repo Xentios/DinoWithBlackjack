@@ -10,7 +10,7 @@ public class HidePieMenuPM : MonoBehaviour, IMenuItemClickHandler
 
     void IMenuItemClickHandler.Handle()
     {
-        displayer.ShowPieMenu(pieMenu);
+        //displayer.ShowPieMenu(pieMenu);
     }
 
 
