@@ -16,7 +16,7 @@ public class ShowHideBackgroundPM : MonoBehaviour, IMenuItemClickHandler
     public void Handle()
     {
         isVisible = !isVisible;
-        if (workWithInvisableBackground)
+        if (workWithInvisableBackground == false)
         {
             background.SetActive(isVisible);
             backgroundImage.color = new Color(1f, 1f, 1f, 1f);

@@ -10,5 +10,7 @@ namespace SimplePieMenu
         bool IsSelectionButtonPressed();
 
         bool IsCloseButtonPressed();
+
+        void CancelSelection() { }
     }
 }

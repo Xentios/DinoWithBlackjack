@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace SimplePieMenu
 {
-    public class MouseAndKeyboard_NEW_INPUT_SYSTEM: MonoBehaviour, IInputDevice
+    public class MouseAndKeyboard_NEW_INPUT_SYSTEM : MonoBehaviour, IInputDevice
     {
         private PieMenuControls pieMenuControls;
 
@@ -38,6 +38,11 @@ namespace SimplePieMenu
             return position;
         }
 
+        public void CancelSelection()
+        {
+            isSelectionCanceled = false;
+        }
+
         public bool IsSelectionButtonPressed()
         {
             return IsButtonPressed(ref isSelectionCanceled);
@@ -57,7 +62,7 @@ namespace SimplePieMenu
             }
             else
                 return false;
-            
+
         }
 
         private void OnCursorPositionPerformed(Vector2 pointerPosition)

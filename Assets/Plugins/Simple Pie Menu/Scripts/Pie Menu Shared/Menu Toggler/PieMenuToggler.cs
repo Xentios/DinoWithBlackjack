@@ -15,7 +15,6 @@ namespace SimplePieMenu
 
         private int openedPieMenusCount;
 
-        public event System.Action<bool> OnMenuStateChanged;
 
         private void Update()
         {
@@ -50,7 +49,6 @@ namespace SimplePieMenu
 
         private void ShowPieMenu(PieMenuState state)
         {
-            OnMenuStateChanged?.Invoke(true);
             state.PieMenuInfo.SetTransitionState(true);
             state.PieMenuGO.SetActive(true);
             animationsHandler.PlayAnimation(state.Animator, PieMenuAnimationsSettingsHandler.TriggerActiveTrue);
@@ -59,7 +57,7 @@ namespace SimplePieMenu
 
         private void HidePieMenu(PieMenuState state)
         {
-            OnMenuStateChanged?.Invoke(false);
+            state.SelectionHandler.DisableClickDedecting();
             state.SelectionHandler.ToggleSelection(false);
             references.AudioSettingsHandler.PlayAudio(state.PieMenuElements.MouseClickAudioSource);
             animationsHandler.PlayAnimation(state.Animator, PieMenuAnimationsSettingsHandler.TriggerActiveFalse);
@@ -68,9 +66,11 @@ namespace SimplePieMenu
 
         private IEnumerator WaitForAudioAndAnimationToFinishPlaiyng(PieMenuState state, bool isActive)
         {
+            state.SelectionHandler.DisableClickDedecting();
             float timeToWait = CalculateTimeToWait(state.PieMenu);
 
             yield return new WaitForSeconds(timeToWait);
+
 
             if (isActive)
             {
@@ -82,9 +82,11 @@ namespace SimplePieMenu
             }
             else
             {
+
                 state.PieMenuGO.SetActive(false);
                 state.PieMenuInfo.SetTransitionState(false);
                 ManageScriptLifecycle(false);
+                state.SelectionHandler.DisableClickDedecting();
             }
 
 

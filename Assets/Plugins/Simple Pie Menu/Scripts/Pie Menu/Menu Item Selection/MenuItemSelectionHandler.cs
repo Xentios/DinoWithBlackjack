@@ -15,7 +15,7 @@ namespace SimplePieMenu
         public InputDeviceGetter InputDeviceGetter { get; private set; }
 
         public bool SelectionEnabled { get; private set; }
-        public bool CanBeClicked { get; private set; }
+        private bool CanBeClicked { get; set; }
 
         private int selection;
         private bool coroutineRunning;
@@ -61,7 +61,14 @@ namespace SimplePieMenu
 
         public void EnableClickDetecting()
         {
+            Debug.Log("ENABLEDDDDD");
             CanBeClicked = true;
+        }
+
+        public void DisableClickDedecting()
+        {
+            CanBeClicked = false;
+            InputDeviceGetter.InputDevice.CancelSelection();
         }
 
         public IEnumerator HandleSelection()
